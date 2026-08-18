@@ -8,8 +8,11 @@ body{
   justify-content:center;
   align-content:center; 
   min-height:100vh;
-  gap:20px;
+  gap:100px;
   font-size:30px;
+  
+  
+
 }
 
 .card{
@@ -21,7 +24,10 @@ body{
   border:2px solid black;
   border-radius:5px;
   color:red;
-  box-shadow: 0px 0px 5px rgba(96, 96, 96, 0.5);
+  box-shadow: 1px 4px 10px rgba(46, 45, 45, 0.5);
+  padding:5px;
+  transform: scale(1.5);
+  
 }
 
 .card:first-of-type {

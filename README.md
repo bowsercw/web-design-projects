@@ -4,7 +4,7 @@
 # Repository Structure
 ```text
 responsive-web-design-project/
-├── 01-playing-cards/
+├── playing-cards/
 │   ├── index.html
 │   └── styles.css
 '''
