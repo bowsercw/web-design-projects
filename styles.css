@@ -1,0 +1,42 @@
+body{
+  background-color:gray;
+}
+
+#playing-cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  font-size:30px;
+}
+
+.card{
+  display:flex;
+  justify-content:space-between;
+  width:75px;
+  height:100px;
+  border:2px solid black;
+  border-radius:5px;
+  color:red;
+}
+
+.card:first-of-type {
+  color: black;
+}
+
+.left{
+  display:flex;
+  align-self:flex-start;
+}
+
+.middle{
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+}
+
+.right{
+  display:flex;
+  
+  align-self:flex-end;
+}
