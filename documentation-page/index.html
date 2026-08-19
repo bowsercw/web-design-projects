@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programming Language Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Programming Languages</h1>
+    <nav id="navbar">
+    <header>
+    <h2> 
+    List of Languages</h2>
+    </header>
+      <ul>
+      <li><a class="nav-link" href="#python">Python</a></li>
+      <li><a class="nav-link" href="#java">Java</a></li>
+      <li><a class="nav-link" href="#javascript">JavaScript</a></li>
+      <li><a class="nav-link" href="#C++">C++</a></li>
+      <li><a class="nav-link" href="#C#">C#</a></li>
+    </ul>
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="python">
+      <header>
+      <h2>Python</h2>
+      </header>
+      <p>Python is a high-level, interpreted programming language renowned for its clear, human-readable syntax and emphasis on code simplicity. Designed to prioritize developer productivity, it relies on indentation to define code blocks, making it exceptionally accessible for beginners while remaining powerful enough for complex engineering. Its vast ecosystem# of open-source libraries and frameworks allows developers to build full-scale web applications, automate repetitive tasks, and process complex data with minimal boilerplate code.</p>
+      <p>Beyond general scripting, Python serves as the primary language for data science, artificial intelligence, and machine learning, supported by frameworks like TensorFlow, PyTorch, and Pandas. It is also widely used in backend web development through micro-frameworks like Flask and full-stack solutions like Django. While it trades execution speed for development speed due to its dynamically typed and interpreted nature, its versatility makes it an industry staple across research and software development.</p>
+      <ul>
+        <li>Data Science, Artificial Intelligence, and Machine Learning</li>
+        <li>Backend Web Development (Flask, Django)</li>
+        <li>Task Automation and Web Scraping</li>
+    </ul>
+      <pre><code>// Python Example
+def greet(name):
+  print(f"Hello, {name}!")
+
+greet("World")</code></pre>
+    
+      </section>
+
+      <section class="main-section" id="java">
+        <header>
+        <h2>Java</h2>
+        </header>
+        <p>Java is a class-based, object-oriented programming language designed around the philosophy of "write once, run anywhere." Code written in Java compiles into platform-independent bytecode rather than machine-specific instructions, which is then executed by the Java Virtual Machine (JVM). This architecture ensures that Java applications run consistently across diverse operating systems, hardware setups, and cloud environments without needing to be recompiled.</p>
+        <p>Known for its strong typing, strict object-oriented structure, and built-in garbage collection, Java is heavily favored for building large-scale enterprise systems, banking infrastructure, and backend web APIs. It has historically served as the primary foundation for Android mobile app development and powers massive data-processing systems via frameworks like Spring and Apache Hadoop. Its compile-time safety and memory management make it an ideal choice for high-throughput, mission-critical applications.</p>
+        <ul>
+          <li>Large-Scale Enterprise Software and Banking Systems</li>
+          <li>Android Mobile Application Development</li>
+          <li>Big Data Processing (Apache Hadoop, Spark)</li>
+        </ul>
+        <pre><code>// Java Example
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+      </section>
+      <section class="main-section" id="javascript">
+        <header>
+        <h2>JavaScript</h2>
+        </header>
+        <p>JavaScript is a dynamic, lightweight scripting language that serves as the core programming technology of the World Wide Web alongside HTML and CSS. Originally built to execute inside web browsers, it enables front-end developers to create interactive, dynamic web interfaces—handling real-time user inputs, manipulating document layouts, and fetching asynchronous server data without requiring full page reloads.</p>
+        <p>With the advent of server-side environments like Node.js, JavaScript expanded beyond the client side into a full-stack development language. Its event-driven, non-blocking asynchronous architecture allows it to handle thousands of concurrent network connections efficiently, making it popular for real-time web applications, REST APIs, and cross-platform desktop or mobile software.</p>
+        <h3>Common Uses:</h3>
+        <ul>
+          <li>Front-End Web Interactivity (React, Vue, Angular)</li>
+          <li>Full-Stack & Backend Server Development (Node.js)</li>
+          <li>Cross-Platform Mobile Apps (React Native)</li>
+        </ul>
+        <pre><code>// JavaScript Example
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("World");</code></pre>
+        
+      </section>
+      <section class="main-section" id="C++">
+        <header>
+        <h2>C++</h2>
+        </header>
+        <p>C++ is a high-performance, compiled systems programming language created as an extension of C to include object-oriented features. It grants developers low-level control over hardware resources, memory allocation, and processor execution while providing high-level abstractions like classes, templates, and exception handling. This balance allows programmers to write optimized code tailored precisely to underlying system architectures.</p>
+        <p>Because of its execution speed and deterministic resource management, C++ is the industry standard for performance-critical applications. It powers 3D game engines (such as Unreal Engine), operating system kernels, web browser rendering engines, high-frequency trading systems, and embedded firmware. While its steep learning curve and manual memory management require careful developer oversight, its performance capabilities remain largely unmatched.</p>
+        <h3>Common Uses:</h3>
+        <ul>
+          <li>3D Game Engines (Unreal Engine)</li>
+          <li>Operating Systems and Web Browser Engines</li>
+          <li>High-Frequency Trading and Financial Systems</li>
+        </ul>
+        <pre><code>// C++ Example
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+      
+      <section class="main-section" id="C#">
+        <header>
+        <h2>C#</h2>
+        </header>
+        <p>C# (C-Sharp) is a modern, object-oriented programming language developed by Microsoft as part of the .NET ecosystem. Inspired by C and Java, it combines strong typing, imperative logic, and declarative programming styles into a clean, modern syntax. It features automatic memory management via garbage collection, strong type safety, and rich language features like LINQ (Language Integrated Query) for seamless data manipulation.</p>
+        <p>C# is primarily used for developing enterprise software, desktop applications on Windows, and scalable backend web services using ASP.NET Core. Additionally, it is the dominant language for game development in the Unity game engine, enabling developers to build 2D, 3D, and virtual reality experiences across multiple platforms. Its deep integration with Microsoft tools and cross-platform capabilities make it a popular general-purpose language.</p>
+        <h3>Common Uses:</h3>
+        <ul>
+          <li>2D/3D Game Development (Unity Engine)</li>
+          <li>Enterprise Web Applications (ASP.NET Core)</li>
+          <li>Windows Desktop Applications</li>
+        </ul>
+        <pre><code>// C# Example
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}</code></pre>
+      </section>
+
+
+    </main>
+  </body>
+</html>
