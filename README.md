@@ -7,4 +7,9 @@ responsive-web-design-project/
 ├── playing-cards/
 │   ├── index.html
 │   └── styles.css
-'''
+├── book-inventory/
+│   ├── index.html
+│   └── styles.css
+├── documentation-page/
+│   ├── index.html
+│   └── styles.css
