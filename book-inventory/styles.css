@@ -63,7 +63,7 @@ span[class="status"], span[class^="rate"]{
 
 span[class^="rate"] > span{
     border:2px solid black;
-    border-radius:50%git;
+    border-radius:50%;
     margin:5px;
     height:15px;
     width:15px;
