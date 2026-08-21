@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -32,6 +35,8 @@ h1{
   margin: 10px;
   text-align: center;
   font-size: 1.8rem;
+
+
 }
 
 #navbar ul {
@@ -68,7 +73,7 @@ h1{
 #main-doc {
   margin-left: 310px;
   padding: 20px;
-}
+    }
 
 pre {
   background-color: #f7f9fa;
