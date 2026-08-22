@@ -5,7 +5,7 @@
 ## 📁 Repository Structure
 
 ```text
-responsive-web-design-projects/
+web-design-projects/
 ├── book-inventory/
 │   ├── index.html
 │   └── styles.css
