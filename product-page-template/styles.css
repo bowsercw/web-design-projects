@@ -1,0 +1,390 @@
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --panel-2: #eef3ff;
+  --text: #111827;
+  --muted: #5b6475;
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --accent: #ec4899;
+  --line: #e5e7eb;
+  --shadow: 0 18px 40px rgba(17, 24, 39, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+#header-img {
+  width: 180px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 70px 0 40px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.eyebrow,
+.section-tag {
+  display: inline-block;
+  margin: 0 0 14px;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.lead {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 580px;
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.hero-stats {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.hero-stats li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.hero-stats li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.hero-product {
+  background: linear-gradient(135deg, #e0e7ff, #f5f3ff);
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.hero-product img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.features,
+.pricing,
+.newsletter {
+  padding: 80px 0;
+}
+
+.features h2,
+.pricing h2,
+.newsletter h2,
+.details h2 {
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.feature-grid,
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.feature-card,
+.price-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.04);
+}
+
+.feature-card h3,
+.plan-name {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.feature-card p,
+.price-card ul {
+  color: var(--muted);
+}
+
+.details {
+  background: var(--panel-2);
+  padding: 80px 0;
+}
+
+.details-inner {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.details-copy p {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+#video {
+  width: 100%;
+  min-height: 350px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-card.featured {
+  border-color: var(--primary);
+  background: linear-gradient(180deg, #f8faff, #eef2ff);
+  transform: translateY(-8px);
+}
+
+.price-card h3 {
+  margin: 8px 0 18px;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.price-card li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.price-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+}
+
+.newsletter {
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.newsletter .container {
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px 18px;
+  font-size: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.newsletter button {
+  border: none;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  padding: 16px 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.site-footer {
+  padding: 24px 0 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: var(--muted);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .hero-inner,
+  .details-inner,
+  .feature-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner,
+  .footer-inner,
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-product img {
+    height: 420px;
+  }
+}

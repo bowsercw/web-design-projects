@@ -2,31 +2,187 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Product Landing Page</title>
-    <link rel="styleshet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
-<body>
-  <header id="header">
-    <img id="header-img" src="https://placehold.co/200x100?text=Brand-Logo">
-    <nav id="nav-bar">
-      <a class="nav-link" href="#header">Home</a>
-      <a class="nav-link" href="#video">About</a>
-      <a class="nav-link" href="#form">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <video id="video"
-    src="https://www.youtube.com/watch?v=NpEaa2P7qZI">
-      
-    </video>
-    <p class="product-desc">Morbi efficitur fringilla mi. Sed eu lorem nec magna rhoncus blandit sit amet eleifend diam. Aenean non rutrum erat. Cras non ipsum interdum, ultricies dui quis, ultricies ante. Donec pellentesque est sed ornare vehicula. Ut in pretium urna. Ut a porttitor ex, imperdiet eleifend massa. Integer vulputate rhoncus odio</p>
-    <form id="form" action="https://www.freecodecamp.org/email-submit">
-      <input type="email" id="email" placeholder="example@gmail.com" name="email">
-      <input type="submit" id="submit" >
-    </form>
-  </main>
+  <body>
+    <header id="header" class="site-header">
+      <div class="container header-inner">
+        <img
+          id="header-img"
+          src="https://placehold.co/180x70/111827/ffffff?text=Brand Logo  "
+          alt="Nova Audio logo"
+        />
 
-</body>
+        <nav id="nav-bar" class="nav-bar">
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#details">Details</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+          <a class="nav-link" href="#form">Contact</a>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">New release</p>
+            <h1>Product Name</h1>
+            <p class="lead">
+              Product description goes here. Morbi efficitur fringilla mi. Sed eu lorem nec magna rhoncus blandit sit amet eleifend diam.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#pricing" class="btn btn-primary">Shop now</a>
+              <a href="#features" class="btn btn-secondary">Learn more</a>
+            </div>
+
+            <ul class="hero-stats">
+              <li>Features</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+          </div>
+
+          <div class="hero-product">
+            <img
+              src="https://placehold.co/10x70/111827/ffffff?text=Product"
+              alt="Product Image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <p class="section-tag">Why people love it</p>
+          <h2>Product Benefits</h2>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Benefit 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu lorem nec magna rhoncus blandit sit amet eleifend diam.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Benefit 2</h3>
+              <p>
+                Aenean non rutrum erat. Cras non ipsum interdum, ultricies dui quis, ultricies ante.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Benefit 3</h3>
+              <p>
+                Donec pellentesque est sed ornare vehicula. Ut in pretium urna. Ut a porttitor ex, imperdiet eleifend massa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="details">
+        <div class="container details-inner">
+          <div class="details-copy">
+            <p class="section-tag">Designed for life</p>
+            <h2>Product Details</h2>
+            <p>
+              Morbi efficitur fringilla mi. Sed eu lorem nec magna rhoncus
+              blandit sit amet eleifend diam. Aenean non rutrum erat. Cras non
+              ipsum interdum, ultricies dui quis, ultricies ante.
+            </p>
+            <p>
+              Donec pellentesque est sed ornare vehicula. Ut in pretium urna. Ut a
+              porttitor ex, imperdiet eleifend massa. Integer vulputate rhoncus
+              odio.
+            </p>
+          </div>
+
+          <div class="details-media">
+            <iframe
+              id="video"
+              src="https://www.youtube.com/embed/NpEaa2P7qZI"
+              title="Nova Audio product video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <p class="section-tag">Simple pricing</p>
+          <h2>Choose your setup.</h2>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <p class="plan-name">Standard</p>
+              <h3>$199</h3>
+              <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+              <a class="btn btn-primary">Buy now</a>
+            </article>
+
+            <article class="price-card featured">
+              <p class="plan-name">Pro</p>
+              <h3>$249</h3>
+              <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+              <a class="btn btn-primary">Best value</a>
+            </article>
+
+            <article class="price-card">
+              <p class="plan-name">Studio</p>
+              <h3>$299</h3>
+              <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+              <a class="btn btn-primary">Get studio</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <h2>Get product updates first.</h2>
+          <form id="form" action="#">
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <button type="submit" id="submit">Notify me</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Brand Copyright</p>
+        <nav class="footer-nav">
+          <a href="#features">Features</a>
+          <a href="#details">Details</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
